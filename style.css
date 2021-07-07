@@ -1,0 +1,80 @@
+body{
+	font-family: 'Otomanopee One', sans-serif;
+	background-image: url('1.jpg');
+	background-size: 100%;
+	color: #ffffff; 
+}
+#form2{
+	display: none;
+}
+#sign-in-tab:checked ~ #form2, #sign-up-tab:checked ~ #form1{
+	display: block;
+}
+#sign-in-tab:checked ~ #form1, #sign-up-tab:checked ~ #form2{
+	display: none;
+}
+.tab:not(:checked)+label{
+	opacity: 0.5;
+}
+.login-form{
+	position: absolute;
+	top:20%;
+	left: 10%;
+	width: 400px;
+}
+.tab{
+	display: none;
+}
+.tab-header{
+		width: 48%;
+		text-align: center;
+		font-size: 18px;
+		display: inline-block;
+		cursor: pointer;
+}
+.tab-header:after{
+	display: block;
+	content: '';
+	height: 20px;
+	border-bottom: 5px solid red;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+.tab:checked + label:after{
+	transform: scaleX(1);
+}
+.header{
+	margin: 10px 0 10px 0;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.form-input input{
+	height: 25px;
+	width: 380px;
+	border-radius: 10px;
+	border-width: 0;
+	padding: 10px;
+	color: #ffffff;
+	margin-top: 10px;
+	background-color: rgba(255,255,255,0.4);
+}
+.input:focus{
+	outline: none;
+}
+.submit-button{
+	margin: 20px 0;
+	width: 400px;
+	height: 35px;
+	border-radius: 10px;
+	border-width: 0;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#2E0F4A;
+	color: #fff;
+	cursor: pointer;
+
+}
+.input::Placeholder,#check{
+	color: rgba(255,255,255,0.8);
+}

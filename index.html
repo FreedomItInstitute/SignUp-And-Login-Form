@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up for free</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="login-form">
+			<input type="radio" name="tab" class="tab" id="sign-up-tab" checked>
+			<label for="sign-up-tab" class="tab-header">SIGN UP</label>
+			<input type="radio" name="tab" class="tab" id="sign-in-tab" checked>
+			<label for="sign-in-tab" class="tab-header">SIGN IN</label>
+
+			<form id="form1">
+				<div class="header">Sign Up for free</div>
+				<div class="form-input">
+					<input type="text" class="input" id="new-username" placeholder="Your Name" required>
+				</div>
+				<div class="form-input">
+					<input type="email" class="input" id="email" placeholder="Your Email" required>
+				</div>
+				<div class="form-input">
+					<input type="password" class="input" id="new-password" placeholder="Your Password" required>
+				</div>
+				<input type="submit" id="sign-up" class="submit-button" value="SIGN UP">
+			</form>
+			<form id="form2">
+				<div class="header">Sign IN for free</div>
+				<div class="form-input">
+					<input type="text" class="input" id="username" placeholder="Username" required>
+				</div>
+				<div class="form-input">
+					<input type="password" class="input" id="password" placeholder="Password" required>
+				</div>
+				<input type="checkbox" id="check"><span>Keep me Signed in</span>
+				<input type="submit" id="sign-in" class="submit-button" value="SIGN IN">
+
+			</form>
+
+
+		</div>
+	</body>
+</html>
